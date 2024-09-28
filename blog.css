@@ -1,0 +1,126 @@
+/* Estilo base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d0d0d; /* Fundo preto profundo */
+    color: #ffffff; /* Texto branco */
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Header */
+  header {
+    background-color: #1a1a1a; /* Preto suave para o header */
+    padding: 20px 0;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #b22222; /* Vermelho escuro */
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #ffffff; /* Texto branco */
+    text-decoration: none;
+  }
+  
+  nav ul li a.active {
+    color: #b22222; /* Destacar link ativo */
+  }
+  
+  nav ul li a:hover {
+    color: #b22222; /* Vermelho escuro ao passar o mouse */
+  }
+  
+  /* Seção do Blog */
+  .blog-section {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .blog-section h2 {
+    font-size: 32px;
+    color: #b22222;
+    margin-bottom: 20px;
+  }
+  
+  .blog-section p {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  
+  .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Cartão de Postagem */
+  .blog-card {
+    background-color: #1a1a1a; /* Fundo preto suave */
+    border: 1px solid #333;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+  }
+  
+  .blog-card h3 {
+    color: #b22222; /* Vermelho escuro */
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .blog-card p {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  .blog-card .blog-date {
+    font-size: 14px;
+    color: #cccccc;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    background-color: #b22222; /* Vermelho escuro para botões */
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #8b0000; /* Vermelho mais escuro ao passar o mouse */
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #1a1a1a;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #ffffff;
+  }
+  
