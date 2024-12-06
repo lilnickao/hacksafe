@@ -1,8 +1,10 @@
+/* Estilo base */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #0d0d0d; /* Fundo preto profundo */
+  padding-bottom: 60px; /* Adiciona espaço na parte inferior para o rodapé fixo */
 }
 
 .container {
@@ -11,6 +13,7 @@ body {
   padding: 0 20px;
 }
 
+/* Header */
 header {
   background-color: #1a1a1a; /* Preto suave para o header */
   color: #ffffff; /* Texto branco */
@@ -44,17 +47,18 @@ nav ul li a:hover {
   color: #b22222; /* Vermelho mais escuro no hover */
 }
 
+/* Seção Hero */
 .hero {
-  background-color: #1a1a1a; /* Preto suave para a seção hero */
+  background-color: #1a1a1a; /* Fundo preto suave */
   color: #ffffff; /* Texto branco */
-  padding: 100px 0;
+  padding: 80px 0;
   text-align: center;
 }
 
 .hero h2 {
-  margin-bottom: 20px;
   font-size: 36px;
-  color: #b22222; /* Vermelho mais escuro para o título */
+  color: #b22222; /* Vermelho escuro */
+  margin-bottom: 20px;
 }
 
 .hero p {
@@ -63,48 +67,114 @@ nav ul li a:hover {
   color: #ffffff; /* Texto branco */
 }
 
+/* Estilo para os detalhes da empresa */
+.company-details {
+  background-color: #1a1a1a; /* Fundo preto suave */
+  padding: 50px 0;
+  color: #ffffff;
+}
+
+.company-details h3 {
+  font-size: 28px;
+  color: #b22222; /* Vermelho escuro */
+  margin-bottom: 20px;
+}
+
+.company-details p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* Escopo de Bug Bounty */
+.bounty-scope {
+  margin-top: 40px;
+  background-color: #333; /* Fundo mais escuro para a seção de escopo */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.bounty-scope h4 {
+  font-size: 24px;
+  color: #b22222; /* Vermelho escuro */
+}
+
+.bounty-scope ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.bounty-scope ul li {
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+/* Botões */
 .btn {
-  background-color: #b22222; /* Vermelho mais escuro para os botões */
+  background-color: #b22222; /* Vermelho escuro para os botões */
   color: #ffffff; /* Texto branco */
-  padding: 15px 30px;
+  padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
-  margin-right: 20px;
   transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #8b0000; /* Vermelho ainda mais escuro no hover */
+  background-color: #8b0000; /* Vermelho mais escuro ao passar o mouse */
 }
 
+/* Footer */
 footer {
   background-color: #1a1a1a; /* Preto suave para o footer */
-  color: #ffffff; /* Texto branco */
-  padding: 20px 0;
+  color: #ffffff;
+  padding: 10px 0;
   text-align: center;
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
   padding: 10px 0;
+  z-index: 10;
 }
 
-/* Estilo para o ícone do GitHub no canto inferior direito */
+/* Ajuste para o botão de voltar */
+.btn-back {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #b22222; /* Vermelho escuro para o botão */
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  text-align: center; /* Centraliza o texto dentro do botão */
+}
+
+.btn-back:hover {
+  background-color: #8b0000; /* Vermelho mais escuro ao passar o mouse */
+}
+
+.btn-back {
+  display: inline-block;
+  margin-top: 20px;
+  width: auto; /* Garantir que o botão tenha o tamanho correto */
+  margin-bottom: 80px; /* Garante que o botão não seja sobreposto */
+}
+/* Ícone GitHub no canto inferior direito */
 .github-icon {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 1000;
-  color: #ffffff;
-  transition: transform 0.3s ease;
+  bottom: 20px;  /* Distância de 20px do fundo */
+  right: 20px;   /* Distância de 20px da direita */
+  z-index: 1000; /* Garantir que o ícone fique acima de outros elementos */
+  transition: transform 0.3s ease, color 0.3s ease; /* Animação suave para o hover */
+  color: #ffffff; /* Cor branca para o ícone */
 }
 
 .github-icon:hover {
   transform: scale(1.1); /* Aumenta o tamanho do ícone ao passar o mouse */
+  color: #b22222; /* Muda para o vermelho escuro ao passar o mouse */
 }
 
 .github-icon svg {
-  fill: #ffffff; /* Cor do ícone */
+  fill: currentColor; /* Faz com que a cor do ícone seja controlada pela propriedade color */
 }
-
-/* Outros estilos permanecem os mesmos */
